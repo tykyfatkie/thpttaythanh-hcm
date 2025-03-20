@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trường THPT</title>
+    <link rel="icon" type="image/jpg" href="assets/img/logo-truong-TT.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    
+    
+</head>
+<body>
+    <section>
+        <!-- Text -->
+        <div class="container" style="background-color: #186bcc;">
+            <marquee behavior="scroll" direction="left">
+                Chào mừng bạn đến với website trường THPT Tây Thạnh
+            </marquee>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="d-flex align-items-center w-100">
+                    <div class="d-flex align-items-center">
+                        <a href="./index.html">
+                            <img src="assets/img/logo-truong-TT.jpg" style="width: 40px;" alt="">
+                        </a>                        
+                        <p class="ms-3 mb-0 fw-bold text-primary" style="font-size: 14px;">TRƯỜNG THPT TÂY THẠNH</p>
+                    </div>
+                    <div class="ms-auto pb-1">
+                        <i class="bi bi-list" style="font-size: 22px; cursor: pointer;" onclick="toggleSidebar()"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header d-flex align-items-center justify-content-between p-3">
+            </div>
+            <ul class="list-unstyled p-3">
+                <li class="mb-3">
+                    <a href="./index.html" class="text-decoration-none text-dark">Trang chủ</a>
+                </li>
+                <li class="mb-3">
+                    <a href="#" class="text-decoration-none text-dark">Giới thiệu</a>
+                </li>
+                <li class="mb-3">
+                    <a href="#" class="text-decoration-none text-dark">Tin tức</a>
+                </li>
+                <li class="mb-3">
+                    <a href="#" class="text-decoration-none text-dark">Liên hệ</a>
+                </li>
+                <li class="mb-3">
+                    <a href="./view/profile.html" class="text-decoration-none text-dark">Tài khoản</a>
+                </li>
+            </ul>
+        </div>
+        <hr class="mt-0 p-0">
+
+        <!-- Banner chứa card chính và card phụ -->
+        <div class="banner container-fluid p-0">
+            <div class="d-flex flex-column">
+                <!-- Card chính -->
+                <div class="text-bg-dark position-relative">
+                    <img src="assets/img/content-xay-dung-moi-truong-hoc-tap.jpg" class="w-100" style="height: 280px;" alt="...">
+                    <div class="card-img-overlay background-gradient rounded-0" style="z-index: 1;"></div>
+                    <div class="card-img-overlay d-flex flex-column justify-content-end" style="z-index: 2;">
+                        <p class="card-text fs-5 text-white" style="font-weight: bold;">Xây dựng môi trường học tập thân thiện, hạnh phúc</p>
+                        <p class="text-white m-0 p-1" style="font-size: 14px;">Xem chi tiết <i class="bi bi-arrow-right-circle-fill" style="padding-left: 5px;"></i></p>
+                    </div>
+                </div>
+                <hr class="m-0 p-0" style="border: 1px solid gray;">
+                <!-- Container cho 4 card phụ -->
+                <div class="d-flex flex-column">
+                    <!-- Card phụ 1 -->
+                    <div class="card rounded-0" style="background-color: #353535;">
+                        <div class="row g-0">
+                            <div class="col-6 p-2 px-2">
+                                <div class="container">
+                                    <img src="assets/img/content-xay-tram-sac-mien-phi.jpg" style="width: 170px; height: 110px;" alt="...">
+                                </div>
+                            </div>
+                            <div class="col-6 py-2 ">
+                                <div class="card rounded-0 bg-primary text-white px-1" style="font-size: 11px; width: 100px; padding: 1px;">
+                                    Báo nói về trường
+                                </div>
+                                <p class="card-text text-white py-2" style="font-size: 14px;">Ngôi trường ở TP.HCM xây trạm sạc điện miễn phí, trồng cây phủ xanh lớp học</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="m-0 p-0" style="border: 1px solid gray;">
+                    <!-- Card phụ 2 -->
+                    <div class="card rounded-0" style="background-color: #353535;">
+                        <div class="row g-0">
+                            <div class="col-6 p-2 px-2">
+                                <div class="container">
+                                    <img src="assets/img/content-bai-viet-cua-tong-bi-thu.jpg" style="width: 170px; height: 110px;" alt="...">
+                                </div>
+                            </div>
+                            <div class="col-6 py-2">
+                                <div class="card rounded-0 bg-primary text-white px-1" style="font-size: 11px; width: 65px; padding: 1px;">
+                                    Tuyên giáo                                
+                                </div>
+                                <p class="card-text text-white py-2" style="font-size: 14px;">Bài viết của Tổng Bí thư Tô Lâm: HỌC TẬP SUỐT ĐỜI</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="m-0 p-0" style="border: 1px solid gray;">
+                    <!-- Card phụ 3 -->
+                    <div class="card rounded-0" style="background-color: #353535;">
+                        <div class="row g-0">
+                            <div class="col-6 p-2 px-2">
+                                <div class="container">
+                                    <img src="assets/img/content-thoi-khoa-bieu.jpg" style="width: 170px; height: 110px;" alt="...">
+                                </div>
+                            </div>
+                            <div class="col-6 py-2">
+                                <div class="card rounded-0 bg-primary text-white px-1" style="font-size: 11px; width: 90px; padding: 1px;">
+                                    HĐ chuyên môn
+                                </div>
+                                <p class="card-text text-white py-2" style="font-size: 14px;">Thời khóa biểu mới áp dụng từ ngày 03/02/2025</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="m-0 p-0" style="border: 1px solid gray;">
+                    <!-- Card phụ 4 -->
+                    <div class="card rounded-0" style="background-color: #353535;">
+                        <div class="row g-0">
+                            <div class="col-6 p-2 px-2">
+                                <div class="container">
+                                    <img src="assets/img/content-hoat-dong-thien-nguyen.jpg" style="width: 170px; height: 110px;" alt="...">
+                                </div>
+                            </div>
+                            <div class="col-6 py-2">
+                                <div class="card rounded-0 bg-primary text-white px-1" style="font-size: 11px; width: 65px; padding: 1px;">
+                                    Công đoàn
+                                </div>
+                                <p class="card-text text-white py-2" style="font-size: 14px;">Hoạt động thiện nguyện</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content - Gioi thieu ve truong -->
+        <div class="container">
+            <h3 class="p-4 text-center fs-5 fw-bold">Giới thiệu về trường</h3>
+            <!-- Card Content 1 -->
+            <div class="card-body p-0 m-0">
+                <img src="assets/img/about-tro-ve-tuoi-17.jpg" style="height: 240px; width: 366px;" alt="">
+                <p class="py-2" style="font-weight: bolder; font-size: 14px;">Khám phá Tây Thạnh 2024: Ngôi trường THPT lý tưởng cho học sinh 2k9</p>
+            </div>  
+            <!-- Card Content 2 -->
+            <div class="card-body p-0 m-0">
+                <img src="assets/img/about-tap-chi-giao-duc.jpg" style="height: 240px; width: 366px;" alt="">
+                <p class="py-2" style="font-weight: bolder; font-size: 14px;">[HTV]- Chương trình "Tạp chí Giáo dục"- Chủ đề: Học từ những giờ chơi</p>
+            </div>
+            <!-- Card Content 3 -->
+            <div class="card-body p-0 m-0">
+                <img src="assets/img/about-lop-10-lam-vlog.jpg" style="height: 240px; width: 366px;" alt="">
+                <p class="py-2" style="font-weight: bolder; font-size: 14px;">Học sinh lớp 10 thích thú làm Vlog nêu cảm nghĩ về trường Tây Thạnh</p>
+            </div>
+            <div class="container py-4">
+                <div class="rounded-pill bg-primary mx-auto d-flex align-items-center justify-content-center gap-2" style="width: 130px;">
+                    <p class="m-0 text-white" style="font-size: 16px;">Xem tiếp</p>
+                    <i class="bi bi-arrow-right-circle-fill" style="color: white; font-size: 26px;"></i>
+                </div>
+            </div>
+        </div>
+        <hr class="m-0 p-0" style="border: 1px solid gray;">
+        
+        <!-- Content - Tin tuc su kien -->
+        <div class="container">
+            <h3 class="p-4 text-center fs-5 fw-bold">Tin tức sự kiện</h3>
+            <!-- Card Content 1 -->
+            <div class="card-body p-0 m-0">
+                <img src="assets/img/content-xay-dung-moi-truong-hoc-tap.jpg" style="height: 240px; width: 366px;" alt="">
+                <p class="py-2" style="font-weight: bolder; font-size: 14px;">Xây dựng môi trường học tập thân thiện, hạnh phúc</p>
+            </div>  
+            <!-- Card Content 2 -->
+            <div class="card-body p-0 m-0">
+                <img src="assets/img/content-hoi-nghi-doi-thoai.jpg" style="height: 240px; width: 366px;" alt="">
+                <p class="py-2" style="font-weight: bolder; font-size: 14px;">Hội nghị đối thoại giữa lãnh đạo nhà trường với giáo viên, nhân viên Năm 2025</p>
+            </div>
+            <!-- Card Content 3 -->
+            <div class="card-body p-0 m-0">
+                <img src="assets/img/content-to-chuc-hoat-dong.jpg" style="height: 240px; width: 366px;" alt="">
+                <p class="py-2" style="font-weight: bolder; font-size: 14px;">Hội thao Mừng Đảng - Mừng xuân tại trường Tây Thạnh</p>
+            </div>
+            <div class="container py-4">
+                <div class="rounded-pill bg-primary mx-auto d-flex align-items-center justify-content-center gap-2" style="width: 130px;">
+                    <p class="m-0 text-white" style="font-size: 16px;">Xem tiếp</p>
+                    <i class="bi bi-arrow-right-circle-fill" style="color: white; font-size: 26px;"></i>
+                </div>
+            </div>
+        </div>
+        <hr class="m-0 p-0" style="border: 1px solid gray;">
+
+        <!-- Content - Bao noi ve truong -->
+        <div class="container">
+            <h3 class="p-4 text-center fs-5 fw-bold">Báo nói về trường</h3>
+            <!-- Card Content 1 -->
+            <div class="card-body p-0 m-0">
+                <img src="assets/img/content-xay-tram-sac-mien-phi.jpg" style="height: 240px; width: 366px;" alt="">
+                <p class="py-2" style="font-weight: bolder; font-size: 14px;">Ngôi trường ở TP.HCM xây trạm sạc điện miễn phí, trồng cây phủ xanh lớp học</p>
+            </div>  
+            <!-- Card Content 2 -->
+            <div class="card-body p-0 m-0">
+                <img src="assets/img/content-truong-hoc-to-chuc-nhieu-hoat-dong.jpg" style="height: 240px; width: 366px;" alt="">
+                <p class="py-2" style="font-weight: bolder; font-size: 14px;">Trường học TPHCM tổ chức nhiều hoạt động kỷ niệm 95 năm ngày thành lập Đảng</p>
+            </div>
+            <!-- Card Content 3 -->
+            <div class="card-body p-0 m-0">
+                <img src="assets/img/content-teen-thiet-ke-tro-choi.jpg" style="height: 240px; width: 366px;" alt="">
+                <p class="py-2" style="font-weight: bolder; font-size: 14px;">Teen THPT Tây Thạnh thiết kế trò chơi trong hội trại ‘Xuân tình nguyện’</p>
+            </div>
+            <div class="container py-4">
+                <div class="rounded-pill bg-primary mx-auto d-flex align-items-center justify-content-center gap-2" style="width: 130px;">
+                    <p class="m-0 text-white" style="font-size: 16px;">Xem tiếp</p>
+                    <i class="bi bi-arrow-right-circle-fill" style="color: white; font-size: 26px;"></i>
+                </div>
+            </div>
+        </div>
+        <hr class="m-0 p-0" style="border: 1px solid gray;">
+
+        <!-- Content - HĐ chuyên môn -->
+        <div class="container">
+            <h3 class="p-4 text-center fs-5 fw-bold">HĐ chuyên môn</h3>
+            <!-- Card Content 1 -->
+            <div class="card-body p-0 m-0">
+                <img src="assets/img/content-chuc-mung-thay-tro.jpg" style="height: 240px; width: 366px;" alt="">
+                <p class="py-2" style="font-weight: bolder; font-size: 14px;">Chúc mừng thầy trò trường đã có thành tích cao trong kỳ thi học sinh giỏi cấp Thành phố năm học 2024 – 2025</p>
+            </div>  
+            <!-- Card Content 2 -->
+            <div class="card-body p-0 m-0">
+                <img src="assets/img/content-thoi-khoa-bieu.jpg" style="height: 240px; width: 366px;" alt="">
+                <p class="py-2" style="font-weight: bolder; font-size: 14px;">Thời khóa biểu mới áp dụng từ ngày 03/02/2025</p>
+            </div>
+        </div>
+        <hr class="m-0 p-0" style="border: 1px solid gray;">
+
+        <!-- Content - Công khai -->
+        <div class="container">
+            <h3 class="p-4 text-center fs-5 fw-bold">Công khai</h3>
+            <!-- Card Content 1 -->
+            <div class="card-body p-0 m-0">
+                <img src="assets/img/content-quyet-dinh-ve-viec-cong-khai-2025.jpg" style="height: 240px; width: 366px;" alt="">
+                <p class="py-2" style="font-weight: bolder; font-size: 14px;">Quyết định về việc công khai quyết toán thu, chi ngân sách nhà nước năm 2025</p>
+            </div>  
+            <!-- Card Content 2 -->
+            <div class="card-body p-0 m-0">
+                <img src="assets/img/content-quyet-dinh-ve-viec-cong-khai-2024.jpg" style="height: 240px; width: 366px;" alt="">
+                <p class="py-2" style="font-weight: bolder; font-size: 14px;">Quyết định về việc công khai quyết toán thu, chi ngân sách nhà nước năm 2024</p>
+            </div>
+            <div class="container py-4">
+                <div class="rounded-pill bg-primary mx-auto d-flex align-items-center justify-content-center gap-2" style="width: 130px;">
+                    <p class="m-0 text-white" style="font-size: 16px;">Xem tiếp</p>
+                    <i class="bi bi-arrow-right-circle-fill" style="color: white; font-size: 26px;"></i>
+                </div>
+            </div>
+        </div>
+        <hr class="m-0 p-0" style="border: 1px solid gray;">
+
+        <!-- Content - Hoạt động chủ nhiệm -->
+        <div class="container">
+            <h3 class="p-4 text-center fs-5 fw-bold">Hoạt động chủ nhiệm</h3>
+            <!-- Card Content 1 -->
+            <div class="card-body p-0 m-0">
+                <img src="assets/img/content-to-chuc-hoi-nghi-cong-tac.jpg" style="height: 240px; width: 366px;" alt="">
+                <p class="py-2" style="font-weight: bolder; font-size: 14px;">Trường THPT Tây Thạnh tổ chức hội nghị công tác giáo dục học sinh năm học 2024-2025</p>
+            </div>  
+            <!-- Card Content 2 -->
+            <div class="card-body p-0 m-0">
+                <img src="assets/img/content-nap-nang-luong-cho-tuan-moi.jpg" style="height: 240px; width: 366px;" alt="">
+                <p class="py-2" style="font-weight: bolder; font-size: 14px;">Nạp năng lượng cho tuần mới của học sinh Trường THPT Tây Thạnh</p>
+            </div>
+            <div class="container py-4">
+                <div class="rounded-pill bg-primary mx-auto d-flex align-items-center justify-content-center gap-2" style="width: 130px;">
+                    <p class="m-0 text-white" style="font-size: 16px;">Xem tiếp</p>
+                    <i class="bi bi-arrow-right-circle-fill" style="color: white; font-size: 26px;"></i>
+                </div>
+            </div>
+        </div>
+        <hr class="m-0 p-0" style="border: 1px solid gray;">
+
+        <!-- Content - HĐ Đảng - Đoàn thể - Chi bộ -->
+        <div class="container">
+            <h3 class="p-4 text-center fs-5 fw-bold">HĐ Đảng - Đoàn thể - Chi bộ</h3>
+            <!-- Card Content 1 -->
+            <div class="card-body p-0 m-0">
+                <img src="assets/img/content-bai-viet-cua-tong-bi-thu.jpg" style="height: 240px; width: 366px;" alt="">
+                <p class="py-2" style="font-weight: bolder; font-size: 14px;">Bài viết của Tổng Bí thư Tô Lâm: HỌC TẬP SUỐT ĐỜI</p>
+            </div>  
+            <!-- Card Content 2 -->
+            <div class="card-body p-0 m-0">
+                <img src="assets/img/content-hoat-dong-thien-nguyen.jpg" style="height: 240px; width: 366px;" alt="">
+                <p class="py-2" style="font-weight: bolder; font-size: 14px;">Hoạt động thiện nguyện</p>
+            </div>
+            <!-- Card Content 3 -->
+            <div class="card-body p-0 m-0">
+                <img src="assets/img/content-phien-cho-am-thuc.jpg" style="height: 240px; width: 366px;" alt="">
+                <p class="py-2" style="font-weight: bolder; font-size: 14px;">Đông vui "Phiên chợ ẩm thực - Xuân 2025" của trường Tây Thạnh</p>
+            </div>
+            <div class="container py-4">
+                <div class="rounded-pill bg-primary mx-auto d-flex align-items-center justify-content-center gap-2" style="width: 130px;">
+                    <p class="m-0 text-white" style="font-size: 16px;">Xem tiếp</p>
+                    <i class="bi bi-arrow-right-circle-fill" style="color: white; font-size: 26px;"></i>
+                </div>
+            </div>
+        </div>
+        <hr class="m-0 p-0" style="border: 1px solid gray;">
+
+        <!-- Content - TUYỂN SINH LỚP 10 Năm học 2024-2025 -->
+        <div class="container">
+            <h3 class="p-4 text-center fs-5 fw-bold">TUYỂN SINH LỚP 10 Năm học 2024-2025</h3>
+            <!-- Card Content 1 -->
+            <div class="card-body p-0 m-0">
+                <img src="assets/img/content-tuyen-sinh-lop-10.jpg" style="height: 240px; width: 366px;" alt="">
+                <p class="py-2" style="font-weight: bolder; font-size: 14px;">Thông báo về việc bổ sung hồ sơ nhập học lớp 10 năm học 2024-2025</p>
+            </div>  
+            <div class="container py-4">
+                <div class="rounded-pill bg-primary mx-auto d-flex align-items-center justify-content-center gap-2" style="width: 130px;">
+                    <p class="m-0 text-white" style="font-size: 16px;">Xem tiếp</p>
+                    <i class="bi bi-arrow-right-circle-fill" style="color: white; font-size: 26px;"></i>
+                </div>
+            </div>
+        </div>
+        <hr class="m-0 p-0" style="border: 1px solid gray;">
+
+        <!-- Content - Thông tin Tuyển sinh ĐH-CĐ 2025 -->
+        <div class="container">
+            <h3 class="p-4 text-center fs-5 fw-bold">Thông tin Tuyển sinh ĐH-CĐ 2025</h3>
+            <!-- Card Content 1 -->
+            <div class="card-body p-0 m-0">
+                <img src="assets/img/content-chuong-trinh-huong-nghiep.jpg" style="height: 240px; width: 366px;" alt="">
+                <p class="py-2" style="font-weight: bolder; font-size: 14px;">Chương trình hướng nghiệp lần 1 năm học 2024-2025 tại trường THPT Tây Thạnh</p>
+            </div>  
+            <div class="container py-4">
+                <div class="rounded-pill bg-primary mx-auto d-flex align-items-center justify-content-center gap-2" style="width: 130px;">
+                    <p class="m-0 text-white" style="font-size: 16px;">Xem tiếp</p>
+                    <i class="bi bi-arrow-right-circle-fill" style="color: white; font-size: 26px;"></i>
+                </div>
+            </div>
+        </div>
+        <hr class="m-0 p-0" style="border: 1px solid gray;">
+
+        <!-- Footer -->
+        <footer class="container p-0 m-0" style="background-color: #186bcc;">
+            <div class="p-3 text-white">
+                <p class="mb-1 fw-bold" style="font-size: 14px;">NGÀNH GIÁO DỤC VÀ ĐÀO TẠO THÀNH PHỐ HỒ CHÍ MINH</p>
+                <p class="mb-1 fw-bold fs-5">Trường THPT Tây Thạnh</p>
+                <p class="mb-1 fw-semibold" style="font-size: 14px;">Địa chỉ: 27 đường C2</p>
+                <p class="mb-1 fw-semibold" style="font-size: 14px;">Điện thoại: (028) 38 165 608</p>
+                <p class="mb-1 fw-semibold" style="font-size: 14px;">Email: c3taythanh.tphcm@moet.edu.vn</p>
+                
+            </div>
+            <hr class="m-0 p-0" style="border: 1px solid rgb(0, 0, 0); ">
+                <p class="mb-0 p-3 text-white" style="font-size: 14px;">Copyright © 2025 Trường THPT Tây Thạnh</p>
+        </footer>
+    </section>
+
+    <script>
+        function showList(listNumber) {
+        // Ẩn tất cả các list group
+        const lists = document.getElementsByClassName('list-group');
+        for (let list of lists) {
+            list.style.display = 'none';
+        }
+        // Hiển thị list group tương ứng
+        document.getElementById('list-group-' + listNumber).style.display = 'block';
+
+        // Xóa class active khỏi tất cả nav-link
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+        });
+
+        // Thêm class active cho nav-link được chọn
+        const clickedLink = document.querySelector(`.nav-link[onclick="showList(${listNumber})"]`);
+        if (clickedLink) {
+            clickedLink.classList.add('active');
+        }
+    }
+
+        // Gọi showList(1) khi load trang
+        document.addEventListener('DOMContentLoaded', function() {
+            showList(1); // Hiển thị list 1 và đặt active cho "Tin tức"
+        });
+
+        // Navbar
+        function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        const overlay = document.getElementById('overlay');
+        sidebar.classList.toggle('active');
+        overlay.classList.toggle('active');
+    }
+
+        // Tạo overlay động
+        document.addEventListener('DOMContentLoaded', function() {
+            const overlay = document.createElement('div');
+            overlay.id = 'overlay';
+            overlay.className = 'overlay';
+            document.body.appendChild(overlay);
+
+        // Đóng sidebar khi nhấp vào overlay
+        overlay.addEventListener('click', function() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+    });
+    </script>
+</body>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+</html>
